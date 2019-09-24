@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>그라데이션</title>
+    <style>
+        div{
+            width: 500px;
+            height: 300px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+        }
+        .grad{
+            /* 그라데이션의 각도를 조절해 보았다*/
+            /* css3 미지원 브라우저 */
+            background: #ff0000;
+            /* 초기 모던 브라우저 - chrome */
+            background: -webkit-linear-gradient(45deg, #ff0000, #ffffff);
+            /*초기 모던 브라우저 - firefox*/
+            background: -moz-linear-gradient(45deg, #ff0000, #ffffff);
+            /*초기 모던 브라우저 - internet explorer*/
+            background: -o-linear-gradient(45deg, #ff0000, #ffffff);
+            /*최신 모던 브라우저*/
+            background: linear-gradient(45deg, #ff0000, #ffffff);
+        }
+    </style>
+</head>
+<body>
+<div class="grad"></div>
+</body>
+</html>

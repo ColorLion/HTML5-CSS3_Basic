@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>input 태그 연습</title>
+</head>
+<body>
+    <!-- hidden -->
+    <hr>
+    <form>
+        <input type="hidden" name="hidden", value="Y">
+    </form>
+    <hr>
+
+    <br><br>
+
+    <!-- password -->
+    <form>
+        <fieldset>
+            <label>아이디: <input type="text" name="user_id", size="10"></label>
+            <label>비밀번호: <input type="password" name="user_pw", size="10"></label>
+            <input type="submit" value="로그인">
+        </fieldset>
+        <br>
+        <input type="search">
+        <input type="submit" value="검색">
+        <br><br>
+        <input type="url">
+        <br><br>
+        <input type="email">
+        <br><br>
+        <input type="tel">
+    </form>
+
+    <!-- url-email-tel -->
+    <form>
+        <fieldset>
+            <legend>개인정보</legend>
+            <ul>
+                <li>
+                    <label for="user-name">이름</label>
+                    <input type="text" name="user-name">
+                </li>
+                <li>
+                    <label for="mail">메일 주소</label>
+                    <input type="email" name="mail">
+                </li>
+                <li>
+                    <label for="phone">연락처</label>
+                    <input type="tel" name="phone">
+                </li>
+                <li>
+                    <label for="homep">블로그/홈페이지</label>
+                    <input type="url" name="homep">
+                </li>
+            </ul>
+        </fieldset>
+        <br><br>
+        <input type="number" min="1" max="5" value="1">
+        <br><br>
+        <input type="range" min="1" max="5" value="1">
+    </form>
+
+    <br><br>
+
+    <form>
+        <fieldset>
+            <legend>등록 정보</legend>
+            <ul>
+                <li>
+                    <label class="reg", for="member">참여인원<small>(최대 10명)</small></label>
+                    <input type="number" name="member" value="1" min="1" max="10" step="1">
+                </li>
+                <li>
+                    <label class="reg" for="stuffs">지원물품<small>(1인당5개)</small></label>
+                    <input type="number" name="stuffs" value="1" min="1" max="5" step="1">
+                </li>
+                <li>
+                    <label class="reg" for="satis">희망 단계</label>
+                    <input type="range" name="satis" value="1" min="1" max="3">
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>

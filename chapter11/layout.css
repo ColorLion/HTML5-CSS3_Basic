@@ -1,0 +1,89 @@
+#wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #069;
+    padding: 10px;
+    overflow: hidden;
+}
+header h1{
+    width: 40%;
+    float: left;
+    font-size: 2.5em;
+    color: #fff;
+}
+header nav{
+    width: 60%;
+    float: right;
+}
+
+nav ul{
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+nav ul li{
+    display: inline;
+    padding-top: 10px;
+    margin-right: 20px;
+}
+
+nav ul li a, ul li a:visited{
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+}
+
+section{
+    border: 5px solid #333;
+    overflow: hidden;
+}
+
+article{
+    width: 29.17%;
+    height: auto;
+    float: left;
+    margin-left: 1.5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0.5%;
+    border: 1px dotted #333;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+#1st{
+    /*background: url(images/note.png) no-repeat left center;*/
+    /*padding-left: 30px;*/
+    order: 2;
+}
+#2nd{
+    order: 1;
+}
+#3rd{
+    order: 3;
+}
+dl{
+    margin: 10px;
+}
+
+dt{
+    font-weight: bold;
+}
+
+aside{
+    clear: both;
+    width: 95%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #99cc33;
+}
+
+footer{
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}

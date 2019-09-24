@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>원형 그라데이션 반복</title>
+    <style>
+        div{
+            width: 500px;
+            height: 300px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+        }
+        /*그라데이션 시 빨강과 노랑의 경계가 명확해짐*/
+        .grad1{
+            background: #ccc;
+            background: -webkit-repeating-radial-gradient(circle, white, #ccc 10%);
+            background: -moz-repeating-radial-gradient(circle, white, #ccc 10%);
+            background: -o-repeating-radial-gradient(circle, white, #ccc 10%);
+            background: repeating-radial-gradient(circle, white, #ccc 10%);
+        }
+    </style>
+</head>
+<body>
+    <div class="grad1"></div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        태그 연습하자
+    </title>
+</head>
+<body>
+    <label class="reg" for="class">학과</label>
+    <select id="class">
+        <optgroup label="공과대학">
+            <option>건축공학과</option>
+            <option>기계공학과</option>
+            <option>산업공학과</option>
+            <option>컴퓨터공학과</option>
+        </optgroup>
+        <optgroup label="인문대학">
+            <option>사학과</option>
+            <option>어문학부</option>
+            <option>철학</option>
+        </optgroup>
+    </select>
+
+    <br><br>
+
+    <input type="text" id="interest" list="choices">
+    <datalist id="choices">
+        <option value="grammar" label="문법"></option>
+        <option value="voca" label="어휘"></option>
+        <option value="specking" label="리스닝"></option>
+    </datalist>
+
+    <br><br>
+
+    <textarea name="intro" cols="60" rows="5">
+        열심히 사는 것
+        첫 회사로 대기업을 가야될까요
+        오를까요 어떻게 될까요
+    </textarea>
+
+    <br><br>
+
+    <form oninput="result.value=parseInt(num1.value)+parseInt(num2.value">
+        <input type="number" name="num1" value="2">
+        +<input type="number" name="num2" value="3">
+        =<output name="result" for="num"></output>
+    </form>
+
+    <br><br>
+
+    <ul>
+        <li>
+            <label>10초 남음</label>
+            <!-- 전체 60초 중 50초 진행됨 -->
+            <progress value="50" max="60"></progress>
+        </li>
+    </ul>
+
+    <br><br>
+
+    <ul>
+        <li>
+            <label>점유율 0.8</label>
+            <meter value="0.8"></meter>
+        </li>
+        <li>
+            <label>사용량 68%</label>
+            <meter min="0" max="100" value="68"></meter>
+        </li>
+        <li>
+            <label>트래픽 초과</label>
+            <meter min="1024" max="10240" low="2048" high="8192" value="9216"></meter>
+        </li>
+        <li>
+            <label>적절한 트레픽</label>
+            <meter value="0.5" optimum="0.8"></meter>
+        </li>
+    </ul>
+</body>
+</html>

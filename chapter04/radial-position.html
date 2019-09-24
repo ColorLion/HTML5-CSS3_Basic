@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>그라데이션의 위치를 바꿔보자</title>
+    <style>
+        div{
+            width: 500px;
+            height: 300px;
+            margin: 10px;
+        }
+        /*
+        일단 최신 버전에서만 적용이 되는 듯 함
+        그라데이션의 빛의 방향이 변경됨을 확인
+        */
+        .grad{
+            background: blue;
+            background: -webkit-radial-gradient(10% 10%, circle, white,blue);
+            background: -moz-radial-gradient(10% 10%, circle, white, blue);
+            background: -o-radial-gradient(10% 10%, circle, white, blue);
+            background: radial-gradient(circle at 10% 10%, white, blue);
+        }
+    </style>
+</head>
+<body>
+<div class="grad"></div>
+</body>
+</html>

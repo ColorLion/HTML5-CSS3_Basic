@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>그라데이션</title>
+    <style>
+        div{
+            width: 500px;
+            height: 300px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+        }
+        /*그라데이션 시 빨강과 노랑의 경계가 모호해짐*/
+        .grad1{
+            background: red;
+            background: -webkit-repeating-linear-gradient(yellow, red 20px);
+            background: -moz-repeating-linear-gradient(yellow, red 20px);
+            background: -o-repeating-linear-gradient(yellow, red 20px);
+            background: repeating-linear-gradient(yellow, red 20px);
+        }
+    </style>
+</head>
+<body>
+    <div class="grad1"></div>
+</body>
+</html>

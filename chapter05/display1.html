@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>display 속성</title>
+    <style>
+        div{
+            margin: 20px;
+            border: 1px solid #ccc;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+        #inline img {
+            margin: 10px;
+        }
+        #block img {
+            display: block;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 인라인으로 배치되어 브라우저의 창크기에 맞춰 가로로 배치-->
+    <div id="inline">
+        <img src="../img/pic1.jpg">
+        <img src="../img/pic2.jpg">
+        <img src="../img/pic3.jpg">
+    </div>
+    <!-- 블록으로 배치되어 브라우저의 창 크기에 상관없이 세로로 배치-->
+    <div id="block">
+        <img src="../img/pic1.jpg">
+        <img src="../img/pic2.jpg">
+        <img src="../img/pic3.jpg">
+    </div>
+</body>
+</html>
